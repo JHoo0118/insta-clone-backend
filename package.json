@@ -24,7 +24,8 @@
     "prisma-client-lib": "^1.34.3"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "lodash": "^4.17.15"
   },
   "scripts": {
     "deploy": "prisma deploy",
