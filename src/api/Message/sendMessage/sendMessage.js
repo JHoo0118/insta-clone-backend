@@ -22,7 +22,7 @@ export default {
             if (!room) {
                 throw Error("방을 찾을 수 없습니다.");
             }
-            const participants = await prisma.room({ id: room.id }).participants();
+            const participants = await prisma.room({ id: room.id }).participants()
             const getTo = participants.filter(
                 participant => participant.id !== user.id
             )[0];

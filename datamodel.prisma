@@ -59,7 +59,7 @@ type File {
 type Room {
   id: ID! @id
   participants: [User!]!
-  messages: [Message!]! @relation(name: "MessagesOfRoom", onDelete: CASCADE)
+  messages: [Message!]!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
@@ -69,7 +69,7 @@ type Message {
   text: String!
   from: User! @relation(name: "From")
   to: User! @relation(name: "To")
-  room: Room! @relation(name: "MessagesOfRoom")
+  room: Room!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
