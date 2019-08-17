@@ -61,4 +61,4 @@ typings/
 .next
 generated
 build
-yarn.lock
+package-lock.json
